@@ -1,0 +1,15 @@
+.footer {
+    background-color: #ffffff; /* Color gris */
+    color: rgb(0, 0, 0); /* Texto blanco */
+    text-align: center; /* Centrar el texto */
+    padding: 20px; /* Espaciado interno */
+    position: relative; /* Para posicionamiento */
+    bottom: 0; /* Fijo al fondo */
+    width: 100%; /* Ancho completo */
+  }
+  
+  .footer-content {
+    max-width: 800px; /* Ancho máximo */
+    margin: auto; /* Centrar el contenido */
+  }
+  

@@ -1,0 +1,95 @@
+/* Chatbot.css */
+.chatbot-container {
+    max-width: 1000px; /* Aumenta el ancho máximo del cuadro */
+    margin: 0 auto;
+    background-color: #ffffff; /* Blanco de fondo */
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.chatbot-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.cartoon-image {
+    width: 50px; /* Ajusta según el tamaño de tu caricatura */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.chat-box {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #eeb3b3; /* Rosa pastel de fondo */
+}
+
+.message {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start; /* Alinea el mensaje del bot a la izquierda */
+}
+
+.message.user {
+    justify-content: flex-end; /* Mantiene el mensaje del usuario a la derecha */
+}
+
+.badge {
+    display: inline-block;
+    padding: 10px 15px; /* Añadido padding horizontal para más espacio */
+    border-radius: 20px;
+    background-color: #ffffff; /* Fondo blanco para los mensajes */
+    color: rgb(0, 0, 0); /* Color del texto */
+    max-width: 80%; /* Ancho máximo del mensaje */
+    word-wrap: break-word; /* Permitir saltos de línea */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Sombra sutil para un mejor efecto visual */
+}
+
+/* Grupo de entrada */
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.form-control {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.send-button {
+    margin-left: 10px;
+    background-color: #4aaf3d; /* Color de fondo para el botón */
+    color: white; /* Color del texto */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.send-button:disabled {
+    background-color: #ccc; /* Color para el botón deshabilitado */
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    .chatbot-container {
+        width: 100%; /* El cuadro ocupará todo el ancho disponible en pantallas pequeñas */
+        padding: 15px;
+    }
+
+    .cartoon-image {
+        width: 80px; /* Tamaño más pequeño en pantallas pequeñas */
+    }
+
+    .badge {
+        font-size: 14px; /* Fuente más pequeña en pantallas pequeñas */
+    }
+}
